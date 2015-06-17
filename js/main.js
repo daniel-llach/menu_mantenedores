@@ -65,6 +65,7 @@ define([
     var dataitems = [
         {
             nombre: "infraestructura",
+            icon: "infraestructura",
             subitems: [
                 {
                     nombre: "sedes",
@@ -82,6 +83,7 @@ define([
         },
         {
             nombre: "institución",
+            icon: "institucion",
             subitems: [
                 {
                     nombre: "facultades",
@@ -97,6 +99,52 @@ define([
                 },
                 {
                     nombre: "carreras",
+                    link: "#"
+                }
+            ]
+        },
+        {
+            nombre: "agenda",
+            icon: "agenda",
+            subitems: [
+                {
+                    nombre: "periodos",
+                    link: "#"
+                },
+                {
+                    nombre: "semanas",
+                    link: "#"
+                },
+                {
+                    nombre: "bloques",
+                    link: "#"
+                }
+            ]
+        },
+        {
+            nombre: "programación",
+            icon: "programacion",
+            subitems: [
+                {
+                    nombre: "asignaturas",
+                    link: "#"
+                },
+                {
+                    nombre: "demandas",
+                    link: "https://www.youtube.com/watch?v=oHg5SJYRHA0"
+                }
+            ]
+        },
+        {
+            nombre: "planta docente",
+            icon: "profesor",
+            subitems: [
+                {
+                    nombre: "profesores",
+                    link: "#"
+                },
+                {
+                    nombre: "oferta de profesores",
                     link: "#"
                 }
             ]

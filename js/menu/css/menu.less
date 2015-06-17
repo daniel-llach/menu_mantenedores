@@ -41,9 +41,12 @@
 .menu
 {
   width: 50px;
+  height: 100%;
   position: absolute;
   z-index: 99;
   font-family: "open sans";
+  background-color: #02799a;
+  box-sizing: border-box;
 
   > .items
   {
@@ -76,20 +79,27 @@
 
         }
 
+        &:hover + .categoria > .name
+        {
+          background-color: #055e7a;
+
+        }
+
       }
 
       > .categoria
       {
         display: none;
+        width: 155px;
+        position: absolute;
+        top: 0;
+        left: 51px;
 
         > .name
         {
-          // display: none;
           width: auto;
           height: 50px;
-          position: absolute;
-          top: 0;
-          left: 51px;
+          position: relative;
           background-color: #02799a;
           padding: 18px 10px;
           color: #fff;
@@ -99,24 +109,33 @@
           letter-spacing: 1px;
           cursor: default;
 
+          &:hover
+          {
+            background-color: #055e7a;
+
+          }
 
           .box-sizing;
         }
 
         > .subitem
         {
-        // display: none;
-        position: absolute;
-        top: 51px;
-        left: 0px;
-        z-index: 100;
+          position: relative;
+          top: 1px;
+          left: 0;
+          z-index: 100;
+          margin: 0;
+          padding: 0;
 
           > li
           {
+            width: 100%;
             list-style: none;
             height: 50px;
             position: relative;
             border-bottom: 1px solid #fff;
+            margin: 0;
+            padding: 0;
 
             > .icon
             {
@@ -128,6 +147,7 @@
               background-color: #02799a;
               border-right: 1px solid #fff;
 
+
               &:hover
               {
                 background-color: #055e7a;
@@ -138,11 +158,12 @@
 
             > a
             {
+              width: 100%;
+              display: block;
               text-decoration: none;
               width: auto;
               height: 50px;
-              position: absolute;
-              left: 11px;
+              position: relative;
               background-color: #02799a;
               padding: 18px 10px;
               color: #fff;
@@ -151,8 +172,14 @@
               font-size: 10px;
               letter-spacing: 1px;
 
-
               .box-sizing;
+
+              &:hover
+              {
+                background-color: #2C93AF;
+
+              }
+
             }
           }
         }
@@ -161,7 +188,42 @@
     }
 
   }
+  // icons
+  .icon
+  {
+    background-size: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .infraestructura
+  {
+    background-image: url(./../img/infraestructura.svg);
+  }
+
+  .institucion
+  {
+    background-image: url(./../img/institucion.svg);
+  }
+
+  .agenda
+  {
+    background-image: url(./../img/agenda.svg);
+  }
+
+  .programacion
+  {
+    background-image: url(./../img/programacion.svg);
+    background-size: 22px;
+  }
+
+  .profesor
+  {
+    background-image: url(./../img/profesores.svg);
+    background-size: 31px;
+  }
 }
+
 
 
 

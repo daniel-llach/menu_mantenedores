@@ -33,6 +33,11 @@ define([
             leaveCategoria: function(event){
                 event.preventDefault();
                 this.$el.find(".categoria").hide();
+            },
+            onRender: function(){
+                var icon = this.model.get("icon");
+                this.$el.find(".icon").addClass(icon);
+                console.log(icon);
             }
         });
 
